@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset= "UTF-8">
+	<title> Tiago Campos </title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Oh ... god! Um site para a mateira de AM2 do SMD. Nesse caso um portfólio com ilustrações e trabalhos dos semestres anteriores.">
+	<meta name="keywords" content="Desenhos, Sketchs, ilustrações, draw, illustrator, art">
+    <meta name="author" content="Tiago Campos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" media="screen" href="css_index.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MSPS39D');</script>
+<!-- End Google Tag Manager -->
+</head>
+
+
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSPS39D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Navbar (sit on top) -->
+<div class="navbar-top">
+  <div class="navbar-bar navbar-white navbar-padding navbar-card">
+    <a href="#home" class="navbar-bar-item navbar-button">Tiago Campos<br>Ilustrador/Design</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="menu">
+      <ul>
+        <li><a href="Sobre.html">Sobre</a></li>
+        <li><a href="Galeria.html">Portfólio</a></li>
+        <li><a href="Contato.html">Contato</a></li>
+      </ul>
+    </div>
+
+
+
+     <!-- </ul>
+      <a href="Sobre.html" class="navbar-bar-item navbar-button">Sobre</a>
+      <a href="Galeria.html" class="navbar-bar-item navbar-button">Portfólio</a>
+      <a href="Contato.html" class="navbar-bar-item navbar-button">Contato</a>
+    </div>-->
+  </div>
+</div>
+
+
+<div class="homepage-container" id="home">
+<div class="half-home-container" id="metade">
+<h4 class="title">Desing is not an option</h4>
+</div>
+</div>
+
+
+ <!-- Slideshow container -->
+<div class="slideshow-container">	
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade"><img src="Job1.jpg" alt="Upiara"></div>
+  <div class="mySlides fade"><img src="Job2.jpg" alt="Oi"></div>
+  <div class="mySlides fade"><img src="Job3.png" alt="Choco"></div>
+  <div class="mySlides fade"><img src="Job4.png" alt="Efex"></div>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+
+
+
+</body>
+<!--
+<div id="footer"></div>
+
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">Tiago Campos</a></p>
+</footer>-->
